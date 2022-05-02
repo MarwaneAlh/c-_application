@@ -20,24 +20,6 @@ namespace Meteo_Interface
             Data.Tables.DataFromSensor.Columns.Add(Data.Tables.Columns.NbrBytes);
             Data.Tables.DataFromSensor.Columns.Add(Data.Tables.Columns.Type);
         }            
-        private void button_COM_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                SerialPort.Open();
-            }
-            catch(Exception ex)
-            { 
-                MessageBox.Show(ex.Message);   
-            }
-
-            if (SerialPort.IsOpen) ConnexionStatus_Label.Text = "Open";
-            else ConnexionStatus_Label.Text = "Close";
-        }
-
-        private void button_DataTreatment_Click(object sender, EventArgs e)
-        {
-            SerialDataHandler.Reception.DataTreatment(Data.Tables.DataFromSensor, ObjectsGrid);
-        }
+   
     }
 }

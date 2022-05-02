@@ -30,92 +30,87 @@
         {
             this.components = new System.ComponentModel.Container();
             this.SerialPort = new System.IO.Ports.SerialPort(this.components);
-            this.COM_Button = new System.Windows.Forms.Button();
-            this.DataTreatmen_Button = new System.Windows.Forms.Button();
-            this.ObjectsGrid = new System.Windows.Forms.DataGridView();
-            this.Connexion_Label = new System.Windows.Forms.Label();
-            this.ConnexionStatus_Label = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.ObjectsGrid)).BeginInit();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // SerialPort
             // 
             this.SerialPort.PortName = "COM2";
             // 
-            // COM_Button
+            // button1
             // 
-            this.COM_Button.Location = new System.Drawing.Point(32, 23);
-            this.COM_Button.Name = "COM_Button";
-            this.COM_Button.Size = new System.Drawing.Size(164, 50);
-            this.COM_Button.TabIndex = 0;
-            this.COM_Button.Text = "ConnectToPort";
-            this.COM_Button.UseVisualStyleBackColor = true;
-            this.COM_Button.Click += new System.EventHandler(this.button_COM_Click);
+            this.button1.Location = new System.Drawing.Point(23, 12);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(125, 36);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Data";
+            this.button1.UseVisualStyleBackColor = true;
             // 
-            // DataTreatmen_Button
+            // button2
             // 
-            this.DataTreatmen_Button.Location = new System.Drawing.Point(32, 79);
-            this.DataTreatmen_Button.Name = "DataTreatmen_Button";
-            this.DataTreatmen_Button.Size = new System.Drawing.Size(164, 50);
-            this.DataTreatmen_Button.TabIndex = 1;
-            this.DataTreatmen_Button.Text = "Data Treatment";
-            this.DataTreatmen_Button.UseVisualStyleBackColor = true;
-            this.DataTreatmen_Button.Click += new System.EventHandler(this.button_DataTreatment_Click);
+            this.button2.Location = new System.Drawing.Point(306, 12);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(125, 36);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "Chart";
+            this.button2.UseVisualStyleBackColor = true;
             // 
-            // ObjectsGrid
+            // button3
             // 
-            this.ObjectsGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.ObjectsGrid.Location = new System.Drawing.Point(213, 23);
-            this.ObjectsGrid.Name = "ObjectsGrid";
-            this.ObjectsGrid.RowHeadersWidth = 51;
-            this.ObjectsGrid.RowTemplate.Height = 24;
-            this.ObjectsGrid.Size = new System.Drawing.Size(1083, 533);
-            this.ObjectsGrid.TabIndex = 2;
+            this.button3.Location = new System.Drawing.Point(595, 12);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(125, 36);
+            this.button3.TabIndex = 2;
+            this.button3.Text = "Save";
+            this.button3.UseVisualStyleBackColor = true;
             // 
-            // Connexion_Label
+            // button4
             // 
-            this.Connexion_Label.AutoSize = true;
-            this.Connexion_Label.Location = new System.Drawing.Point(2, 173);
-            this.Connexion_Label.Name = "Connexion_Label";
-            this.Connexion_Label.Size = new System.Drawing.Size(116, 16);
-            this.Connexion_Label.TabIndex = 3;
-            this.Connexion_Label.Text = "Connexion Status: ";
+            this.button4.Location = new System.Drawing.Point(453, 12);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(125, 36);
+            this.button4.TabIndex = 3;
+            this.button4.Text = "Account";
+            this.button4.UseVisualStyleBackColor = true;
             // 
-            // ConnexionStatus_Label
+            // button5
             // 
-            this.ConnexionStatus_Label.AutoSize = true;
-            this.ConnexionStatus_Label.Location = new System.Drawing.Point(135, 173);
-            this.ConnexionStatus_Label.Name = "ConnexionStatus_Label";
-            this.ConnexionStatus_Label.Size = new System.Drawing.Size(42, 16);
-            this.ConnexionStatus_Label.TabIndex = 4;
-            this.ConnexionStatus_Label.Text = "Close";
+            this.button5.Location = new System.Drawing.Point(165, 12);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(125, 36);
+            this.button5.TabIndex = 4;
+            this.button5.Text = "Alert";
+            this.button5.UseVisualStyleBackColor = true;
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1345, 568);
-            this.Controls.Add(this.ConnexionStatus_Label);
-            this.Controls.Add(this.Connexion_Label);
-            this.Controls.Add(this.ObjectsGrid);
-            this.Controls.Add(this.DataTreatmen_Button);
-            this.Controls.Add(this.COM_Button);
+            this.ClientSize = new System.Drawing.Size(742, 421);
+            this.Controls.Add(this.button5);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MainForm";
             this.Text = "MainForm";
-            ((System.ComponentModel.ISupportInitialize)(this.ObjectsGrid)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
         internal System.IO.Ports.SerialPort SerialPort;
-        private System.Windows.Forms.Button COM_Button;
-        private System.Windows.Forms.Button DataTreatmen_Button;
-        private System.Windows.Forms.DataGridView ObjectsGrid;
-        private System.Windows.Forms.Label Connexion_Label;
-        private System.Windows.Forms.Label ConnexionStatus_Label;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button5;
     }
 }
 
