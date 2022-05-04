@@ -1,3 +1,4 @@
+C:\Users\Marwa\OneDrive\Bureau\projetHelb\c-_application\Meteo_Interface\Meteo_Interface\bin\Debug\db.accdb
 C:\Users\Marwa\OneDrive\Bureau\projetHelb\c-_application\Meteo_Interface\Meteo_Interface\bin\Debug\Meteo_Interface.exe.config
 C:\Users\Marwa\OneDrive\Bureau\projetHelb\c-_application\Meteo_Interface\Meteo_Interface\bin\Debug\Meteo_Interface.exe
 C:\Users\Marwa\OneDrive\Bureau\projetHelb\c-_application\Meteo_Interface\Meteo_Interface\bin\Debug\Meteo_Interface.pdb
@@ -7,3 +8,4 @@ C:\Users\Marwa\OneDrive\Bureau\projetHelb\c-_application\Meteo_Interface\Meteo_I
 C:\Users\Marwa\OneDrive\Bureau\projetHelb\c-_application\Meteo_Interface\Meteo_Interface\obj\Debug\Meteo_interface.csproj.CoreCompileInputs.cache
 C:\Users\Marwa\OneDrive\Bureau\projetHelb\c-_application\Meteo_Interface\Meteo_Interface\obj\Debug\Meteo_Interface.exe
 C:\Users\Marwa\OneDrive\Bureau\projetHelb\c-_application\Meteo_Interface\Meteo_Interface\obj\Debug\Meteo_Interface.pdb
+C:\Users\Marwa\OneDrive\Bureau\projetHelb\c-_application\Meteo_Interface\Meteo_Interface\obj\Debug\Meteo_interface.csproj.AssemblyReference.cache

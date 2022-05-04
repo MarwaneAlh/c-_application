@@ -30,75 +30,165 @@
         {
             this.components = new System.ComponentModel.Container();
             this.SerialPort = new System.IO.Ports.SerialPort(this.components);
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.panelSide = new System.Windows.Forms.Panel();
+            this.panelHeader = new System.Windows.Forms.Panel();
+            this.mainPanel = new System.Windows.Forms.Panel();
+            this.accountbutton = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.chartbutton = new System.Windows.Forms.Button();
+            this.databutton = new System.Windows.Forms.Button();
+            this.savebutton = new System.Windows.Forms.Button();
+            this.alertbutton = new System.Windows.Forms.Button();
+            this.panelSide.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // SerialPort
             // 
             this.SerialPort.PortName = "COM2";
             // 
-            // button1
+            // panelSide
             // 
-            this.button1.Location = new System.Drawing.Point(23, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(125, 36);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Data";
-            this.button1.UseVisualStyleBackColor = true;
+            this.panelSide.BackColor = System.Drawing.Color.DimGray;
+            this.panelSide.Controls.Add(this.accountbutton);
+            this.panelSide.Controls.Add(this.pictureBox1);
+            this.panelSide.Controls.Add(this.chartbutton);
+            this.panelSide.Controls.Add(this.databutton);
+            this.panelSide.Controls.Add(this.savebutton);
+            this.panelSide.Controls.Add(this.alertbutton);
+            this.panelSide.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelSide.Location = new System.Drawing.Point(0, 30);
+            this.panelSide.Name = "panelSide";
+            this.panelSide.Size = new System.Drawing.Size(205, 511);
+            this.panelSide.TabIndex = 5;
             // 
-            // button2
+            // panelHeader
             // 
-            this.button2.Location = new System.Drawing.Point(306, 12);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(125, 36);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Chart";
-            this.button2.UseVisualStyleBackColor = true;
+            this.panelHeader.BackColor = System.Drawing.Color.DimGray;
+            this.panelHeader.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelHeader.Location = new System.Drawing.Point(0, 0);
+            this.panelHeader.Name = "panelHeader";
+            this.panelHeader.Size = new System.Drawing.Size(792, 30);
+            this.panelHeader.TabIndex = 6;
             // 
-            // button3
+            // mainPanel
             // 
-            this.button3.Location = new System.Drawing.Point(595, 12);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(125, 36);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Save";
-            this.button3.UseVisualStyleBackColor = true;
+            this.mainPanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.mainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.mainPanel.Location = new System.Drawing.Point(205, 30);
+            this.mainPanel.Name = "mainPanel";
+            this.mainPanel.Size = new System.Drawing.Size(587, 511);
+            this.mainPanel.TabIndex = 7;
             // 
-            // button4
+            // accountbutton
             // 
-            this.button4.Location = new System.Drawing.Point(453, 12);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(125, 36);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Account";
-            this.button4.UseVisualStyleBackColor = true;
+            this.accountbutton.BackColor = System.Drawing.Color.DimGray;
+            this.accountbutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.accountbutton.FlatAppearance.BorderSize = 0;
+            this.accountbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.accountbutton.Font = new System.Drawing.Font("Bebas Neue", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.accountbutton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.accountbutton.Image = global::Meteo_Interface.Properties.Resources.profileicon;
+            this.accountbutton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.accountbutton.Location = new System.Drawing.Point(0, 305);
+            this.accountbutton.Name = "accountbutton";
+            this.accountbutton.Size = new System.Drawing.Size(205, 50);
+            this.accountbutton.TabIndex = 4;
+            this.accountbutton.Text = "ACCOUNT";
+            this.accountbutton.UseVisualStyleBackColor = false;
             // 
-            // button5
+            // pictureBox1
             // 
-            this.button5.Location = new System.Drawing.Point(165, 12);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(125, 36);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "Alert";
-            this.button5.UseVisualStyleBackColor = true;
+            this.pictureBox1.Image = global::Meteo_Interface.Properties.Resources.iconnn;
+            this.pictureBox1.Location = new System.Drawing.Point(32, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(132, 120);
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
+            // 
+            // chartbutton
+            // 
+            this.chartbutton.BackColor = System.Drawing.Color.DimGray;
+            this.chartbutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.chartbutton.FlatAppearance.BorderSize = 0;
+            this.chartbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chartbutton.Font = new System.Drawing.Font("Bebas Neue", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chartbutton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.chartbutton.Image = global::Meteo_Interface.Properties.Resources.charticon2;
+            this.chartbutton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.chartbutton.Location = new System.Drawing.Point(0, 249);
+            this.chartbutton.Name = "chartbutton";
+            this.chartbutton.Size = new System.Drawing.Size(205, 50);
+            this.chartbutton.TabIndex = 3;
+            this.chartbutton.Text = "CHART";
+            this.chartbutton.UseVisualStyleBackColor = false;
+            // 
+            // databutton
+            // 
+            this.databutton.BackColor = System.Drawing.Color.DimGray;
+            this.databutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.databutton.FlatAppearance.BorderSize = 0;
+            this.databutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.databutton.Font = new System.Drawing.Font("Bebas Neue", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.databutton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.databutton.Image = global::Meteo_Interface.Properties.Resources.icon3;
+            this.databutton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.databutton.Location = new System.Drawing.Point(0, 137);
+            this.databutton.Name = "databutton";
+            this.databutton.Size = new System.Drawing.Size(205, 50);
+            this.databutton.TabIndex = 0;
+            this.databutton.Text = "DATA";
+            this.databutton.UseVisualStyleBackColor = false;
+            // 
+            // savebutton
+            // 
+            this.savebutton.BackColor = System.Drawing.Color.DimGray;
+            this.savebutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.savebutton.FlatAppearance.BorderSize = 0;
+            this.savebutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.savebutton.Font = new System.Drawing.Font("Bebas Neue", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.savebutton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.savebutton.Image = global::Meteo_Interface.Properties.Resources.saveicon;
+            this.savebutton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.savebutton.Location = new System.Drawing.Point(0, 361);
+            this.savebutton.Name = "savebutton";
+            this.savebutton.Size = new System.Drawing.Size(205, 50);
+            this.savebutton.TabIndex = 2;
+            this.savebutton.Text = "SAVE";
+            this.savebutton.UseVisualStyleBackColor = false;
+            // 
+            // alertbutton
+            // 
+            this.alertbutton.BackColor = System.Drawing.Color.DimGray;
+            this.alertbutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.alertbutton.FlatAppearance.BorderSize = 0;
+            this.alertbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.alertbutton.Font = new System.Drawing.Font("Bebas Neue", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.alertbutton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.alertbutton.Image = global::Meteo_Interface.Properties.Resources.alerteicon;
+            this.alertbutton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.alertbutton.Location = new System.Drawing.Point(0, 193);
+            this.alertbutton.Name = "alertbutton";
+            this.alertbutton.Size = new System.Drawing.Size(205, 50);
+            this.alertbutton.TabIndex = 1;
+            this.alertbutton.Text = "ALERT";
+            this.alertbutton.UseVisualStyleBackColor = false;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(742, 421);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(792, 541);
+            this.Controls.Add(this.mainPanel);
+            this.Controls.Add(this.panelSide);
+            this.Controls.Add(this.panelHeader);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MainForm";
-            this.Text = "MainForm";
+            this.Text = "Captor management App";
+            this.panelSide.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -106,11 +196,15 @@
         #endregion
 
         internal System.IO.Ports.SerialPort SerialPort;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Panel panelSide;
+        private System.Windows.Forms.Panel panelHeader;
+        private System.Windows.Forms.Panel mainPanel;
+        private System.Windows.Forms.Button databutton;
+        private System.Windows.Forms.Button accountbutton;
+        private System.Windows.Forms.Button chartbutton;
+        private System.Windows.Forms.Button savebutton;
+        private System.Windows.Forms.Button alertbutton;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
