@@ -62,7 +62,7 @@ namespace Meteo_Interface
             this.panelSide.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.panelSide.Location = new System.Drawing.Point(0, 93);
             this.panelSide.Name = "panelSide";
-            this.panelSide.Size = new System.Drawing.Size(199, 455);
+            this.panelSide.Size = new System.Drawing.Size(199, 476);
             this.panelSide.TabIndex = 5;
             // 
             // panelHeader
@@ -72,7 +72,7 @@ namespace Meteo_Interface
             this.panelHeader.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelHeader.Location = new System.Drawing.Point(0, 0);
             this.panelHeader.Name = "panelHeader";
-            this.panelHeader.Size = new System.Drawing.Size(814, 93);
+            this.panelHeader.Size = new System.Drawing.Size(910, 93);
             this.panelHeader.TabIndex = 6;
             // 
             // mainPanel
@@ -81,7 +81,7 @@ namespace Meteo_Interface
             this.mainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.mainPanel.Location = new System.Drawing.Point(199, 93);
             this.mainPanel.Name = "mainPanel";
-            this.mainPanel.Size = new System.Drawing.Size(615, 455);
+            this.mainPanel.Size = new System.Drawing.Size(711, 476);
             this.mainPanel.TabIndex = 7;
             // 
             // accountbutton
@@ -191,7 +191,7 @@ namespace Meteo_Interface
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(814, 548);
+            this.ClientSize = new System.Drawing.Size(910, 569);
             this.Controls.Add(this.mainPanel);
             this.Controls.Add(this.panelSide);
             this.Controls.Add(this.panelHeader);
