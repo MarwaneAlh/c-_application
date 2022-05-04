@@ -16,5 +16,10 @@ namespace Meteo_Interface.WinForms
         {
             InitializeComponent();
         }
+
+        private void saveForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
