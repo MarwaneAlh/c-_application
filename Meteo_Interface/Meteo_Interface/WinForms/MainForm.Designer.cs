@@ -96,6 +96,7 @@
             this.accountbutton.TabIndex = 4;
             this.accountbutton.Text = "ACCOUNT";
             this.accountbutton.UseVisualStyleBackColor = false;
+            this.accountbutton.Click += new System.EventHandler(this.accountbutton_Click);
             // 
             // pictureBox1
             // 
@@ -122,6 +123,7 @@
             this.chartbutton.TabIndex = 3;
             this.chartbutton.Text = "CHART";
             this.chartbutton.UseVisualStyleBackColor = false;
+            this.chartbutton.Click += new System.EventHandler(this.chartbutton_Click);
             // 
             // databutton
             // 
@@ -139,6 +141,7 @@
             this.databutton.TabIndex = 0;
             this.databutton.Text = "DATA";
             this.databutton.UseVisualStyleBackColor = false;
+            this.databutton.Click += new System.EventHandler(this.databutton_Click);
             // 
             // savebutton
             // 
@@ -156,6 +159,7 @@
             this.savebutton.TabIndex = 2;
             this.savebutton.Text = "SAVE";
             this.savebutton.UseVisualStyleBackColor = false;
+            this.savebutton.Click += new System.EventHandler(this.savebutton_Click);
             // 
             // alertbutton
             // 
@@ -173,6 +177,7 @@
             this.alertbutton.TabIndex = 1;
             this.alertbutton.Text = "ALERT";
             this.alertbutton.UseVisualStyleBackColor = false;
+            this.alertbutton.Click += new System.EventHandler(this.alertbutton_Click);
             // 
             // MainForm
             // 
