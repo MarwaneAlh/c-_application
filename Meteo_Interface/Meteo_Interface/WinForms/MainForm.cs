@@ -46,26 +46,36 @@ namespace Meteo_Interface
         private void databutton_Click(object sender, EventArgs e)
         {
             loadform(new dataForm());
+            whereIam.Height = databutton.Height;
+            whereIam.Top = databutton.Top;
         }
 
         private void alertbutton_Click(object sender, EventArgs e)
         {
             loadform(new alertForm());
+            whereIam.Height = alertbutton.Height;
+            whereIam.Top = alertbutton.Top;
         }
 
         private void chartbutton_Click(object sender, EventArgs e)
         {
             loadform(new chartForm());
+            whereIam.Height = chartbutton.Height;
+            whereIam.Top = chartbutton.Top;
         }
 
         private void accountbutton_Click(object sender, EventArgs e)
         {
             loadform(new accountForm());
+            whereIam.Height = accountbutton.Height;
+            whereIam.Top = accountbutton.Top;
         }
 
         private void savebutton_Click(object sender, EventArgs e)
         {
             loadform(new saveForm());
+            whereIam.Height = savebutton.Height;
+            whereIam.Top = savebutton.Top;
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
