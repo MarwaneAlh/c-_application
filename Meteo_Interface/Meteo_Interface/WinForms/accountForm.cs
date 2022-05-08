@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,10 +13,15 @@ namespace Meteo_Interface.WinForms
 {
     public partial class accountForm : Form
     {
+
+        public Panel panelmain;
         public accountForm()
         {
             InitializeComponent();
+
+
             loadform(new ConnectingForm());
+            setConnected();
         }
 
 
@@ -31,7 +37,23 @@ namespace Meteo_Interface.WinForms
             this.panel1.Tag = f;
             f.Show();
 
+
         }
+        public void setConnected()
+        {
+            if (this.panel1.Controls.Count == 0)
+            {
+                myAccount m = new myAccount();
+                m.TopLevel = false;
+                m.Dock = DockStyle.Fill;
+                this.panel1.Controls.Add(m);
+                this.panel1.Tag = m;
+                m.Show();
+            }
+        }
+
+
+
 
         private void connectBtn_Click(object sender, EventArgs e)
         {
@@ -42,5 +64,8 @@ namespace Meteo_Interface.WinForms
         {
             loadform(new registerForm());
         }
+
+
+      
     }
 }

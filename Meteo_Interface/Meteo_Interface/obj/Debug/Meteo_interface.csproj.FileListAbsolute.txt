@@ -20,7 +20,6 @@ C:\Users\Marwa\OneDrive\Bureau\projetHelb\Capplicationdebug\c-_application\Meteo
 C:\Users\Marwa\OneDrive\Bureau\projetHelb\Capplicationdebug\c-_application\Meteo_Interface\Meteo_Interface\bin\Debug\Meteo_Interface.exe.config
 C:\Users\Marwa\OneDrive\Bureau\projetHelb\Capplicationdebug\c-_application\Meteo_Interface\Meteo_Interface\bin\Debug\Meteo_Interface.exe
 C:\Users\Marwa\OneDrive\Bureau\projetHelb\Capplicationdebug\c-_application\Meteo_Interface\Meteo_Interface\bin\Debug\Meteo_Interface.pdb
-C:\Users\Marwa\OneDrive\Bureau\projetHelb\Capplicationdebug\c-_application\Meteo_Interface\Meteo_Interface\obj\Debug\Meteo_interface.csproj.AssemblyReference.cache
 C:\Users\Marwa\OneDrive\Bureau\projetHelb\Capplicationdebug\c-_application\Meteo_Interface\Meteo_Interface\obj\Debug\Meteo_Interface.Properties.Resources.resources
 C:\Users\Marwa\OneDrive\Bureau\projetHelb\Capplicationdebug\c-_application\Meteo_Interface\Meteo_Interface\obj\Debug\Meteo_Interface.WinForms.ConnectingForm.resources
 C:\Users\Marwa\OneDrive\Bureau\projetHelb\Capplicationdebug\c-_application\Meteo_Interface\Meteo_Interface\obj\Debug\Meteo_Interface.Resources.dataForm.resources
@@ -34,3 +33,5 @@ C:\Users\Marwa\OneDrive\Bureau\projetHelb\Capplicationdebug\c-_application\Meteo
 C:\Users\Marwa\OneDrive\Bureau\projetHelb\Capplicationdebug\c-_application\Meteo_Interface\Meteo_Interface\obj\Debug\Meteo_interface.csproj.CoreCompileInputs.cache
 C:\Users\Marwa\OneDrive\Bureau\projetHelb\Capplicationdebug\c-_application\Meteo_Interface\Meteo_Interface\obj\Debug\Meteo_Interface.exe
 C:\Users\Marwa\OneDrive\Bureau\projetHelb\Capplicationdebug\c-_application\Meteo_Interface\Meteo_Interface\obj\Debug\Meteo_Interface.pdb
+C:\Users\Marwa\OneDrive\Bureau\projetHelb\Capplicationdebug\c-_application\Meteo_Interface\Meteo_Interface\obj\Debug\Meteo_interface.csproj.AssemblyReference.cache
+C:\Users\Marwa\OneDrive\Bureau\projetHelb\Capplicationdebug\c-_application\Meteo_Interface\Meteo_Interface\obj\Debug\Meteo_Interface.WinForms.myAccount.resources
