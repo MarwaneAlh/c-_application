@@ -74,6 +74,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="WinForms\ConnectingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinForms\ConnectingForm.Designer.cs">
+      <DependentUpon>ConnectingForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="WinForms\dataForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -108,6 +114,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WinForms\registerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinForms\registerForm.Designer.cs">
+      <DependentUpon>registerForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="WinForms\saveForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -118,6 +130,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinForms\ConnectingForm.resx">
+      <DependentUpon>ConnectingForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WinForms\dataForm.resx">
       <DependentUpon>dataForm.cs</DependentUpon>
@@ -133,6 +148,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="WinForms\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinForms\registerForm.resx">
+      <DependentUpon>registerForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WinForms\saveForm.resx">
       <DependentUpon>saveForm.cs</DependentUpon>
