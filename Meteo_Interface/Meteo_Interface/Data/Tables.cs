@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Data;
-using System.Threading.Tasks;
+﻿using System.Data;
 
 namespace Meteo_Interface.Data
 {
@@ -18,5 +13,4 @@ namespace Meteo_Interface.Data
             internal static DataColumn Type = new DataColumn("Config Alarms");
         }
     }
-   
 }
