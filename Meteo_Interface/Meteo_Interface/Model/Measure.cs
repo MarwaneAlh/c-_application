@@ -5,16 +5,16 @@
         public Measure(int id, DataType type, int data, AlarmType alarm)
         {
             Id = id;
-            ConfigStatus = false;
+            IsConfiguratedStatus = false;
             Type = type;
             Data = data;
             LastUpdate = 0;
-            Alarm = alarm;
+            AlarmType = alarm;
         }
 
         public int Id { get; set; }
 
-        public bool ConfigStatus { get; set; }
+        public bool IsConfiguratedStatus { get; set; }
 
         public DataType Type { get; set; }
 
@@ -22,7 +22,9 @@
 
         public int LastUpdate { get; set; }
         
-        public AlarmType Alarm { get; set; }
+        public AlarmType AlarmType { get; set; }
+
+        public Alarm Alarm { get; set; } = null;
     }
 
     public enum AlarmType

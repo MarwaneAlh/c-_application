@@ -1,6 +1,8 @@
-﻿using Meteo_Interface.Resources;
+﻿using Meteo_Interface.Model;
+using Meteo_Interface.Resources;
 using Meteo_Interface.WinForms;
 using System;
+using System.Collections.Generic;
 using System.IO.Ports;
 using System.Windows.Forms;
 
@@ -8,6 +10,8 @@ namespace Meteo_Interface
 {
     public partial class MainForm : Form
     {
+        public static List<Measure> Measures = new List<Measure>();
+
         public MainForm()
         {
             InitializeComponent();
@@ -19,8 +23,6 @@ namespace Meteo_Interface
             Data.Tables.DataFromSensor.Columns.Add(Data.Tables.Columns.BinaryData);
             Data.Tables.DataFromSensor.Columns.Add(Data.Tables.Columns.NbrBytes);
             Data.Tables.DataFromSensor.Columns.Add(Data.Tables.Columns.Type);
-
-
         }
 
         public void loadform(object Form)

@@ -1,9 +1,8 @@
 ﻿namespace Meteo_Interface.Model
 {
-    public class Alarm : Measure
+    public class Alarm
     {
-        public Alarm(Measure m, int min, int max)
-        : base(m.Id, m.Type, m.Data, m.Alarm)
+        public Alarm(int min, int max)
         {
             Min = min;
             Max = max;

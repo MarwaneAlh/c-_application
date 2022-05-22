@@ -34,7 +34,6 @@ namespace Meteo_Interface.Resources
             this.components = new System.ComponentModel.Container();
             this.lData = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.lStatus = new System.Windows.Forms.Label();
             this.lMax = new System.Windows.Forms.Label();
@@ -46,6 +45,7 @@ namespace Meteo_Interface.Resources
             this.nudMin = new System.Windows.Forms.NumericUpDown();
             this.bApply = new System.Windows.Forms.Button();
             this.lConfig = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudMax)).BeginInit();
@@ -58,7 +58,7 @@ namespace Meteo_Interface.Resources
             this.lData.AutoSize = true;
             this.lData.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lData.ForeColor = System.Drawing.Color.White;
-            this.lData.Location = new System.Drawing.Point(513, 0);
+            this.lData.Location = new System.Drawing.Point(460, -88);
             this.lData.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lData.Name = "lData";
             this.lData.Size = new System.Drawing.Size(171, 61);
@@ -68,18 +68,12 @@ namespace Meteo_Interface.Resources
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(60, 90);
+            this.dataGridView1.Location = new System.Drawing.Point(37, 111);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(790, 398);
+            this.dataGridView1.Size = new System.Drawing.Size(708, 390);
             this.dataGridView1.TabIndex = 4;
-            // 
-            // timer1
-            // 
-            this.timer1.Enabled = true;
-            this.timer1.Interval = 1000;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // groupBox1
             // 
@@ -93,9 +87,9 @@ namespace Meteo_Interface.Resources
             this.groupBox1.Controls.Add(this.nudMin);
             this.groupBox1.Controls.Add(this.bApply);
             this.groupBox1.Controls.Add(this.lConfig);
-            this.groupBox1.Location = new System.Drawing.Point(937, 90);
+            this.groupBox1.Location = new System.Drawing.Point(811, 111);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(232, 398);
+            this.groupBox1.Size = new System.Drawing.Size(232, 390);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
@@ -192,12 +186,18 @@ namespace Meteo_Interface.Resources
             this.lConfig.TabIndex = 0;
             this.lConfig.Text = "Configuration";
             // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick_1);
+            // 
             // dataForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.ClientSize = new System.Drawing.Size(1200, 692);
+            this.ClientSize = new System.Drawing.Size(1095, 517);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.lData);
@@ -224,7 +224,6 @@ namespace Meteo_Interface.Resources
 
         private System.Windows.Forms.Label lData;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label lType;
         private System.Windows.Forms.Label lID;
@@ -236,5 +235,6 @@ namespace Meteo_Interface.Resources
         private System.Windows.Forms.Label lStatus;
         private System.Windows.Forms.Label lMax;
         private System.Windows.Forms.Label lMin;
+        private System.Windows.Forms.Timer timer1;
     }
 }
