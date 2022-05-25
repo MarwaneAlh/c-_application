@@ -67,7 +67,7 @@ namespace Meteo_Interface
             this.panelSide.Location = new System.Drawing.Point(0, 142);
             this.panelSide.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panelSide.Name = "panelSide";
-            this.panelSide.Size = new System.Drawing.Size(298, 323);
+            this.panelSide.Size = new System.Drawing.Size(298, 353);
             this.panelSide.TabIndex = 5;
             // 
             // whereIam
@@ -130,7 +130,7 @@ namespace Meteo_Interface
             this.databutton.Location = new System.Drawing.Point(0, 48);
             this.databutton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.databutton.Name = "databutton";
-            this.databutton.Size = new System.Drawing.Size(297, 77);
+            this.databutton.Size = new System.Drawing.Size(297, 72);
             this.databutton.TabIndex = 0;
             this.databutton.Text = "DATA";
             this.databutton.UseVisualStyleBackColor = false;
@@ -184,7 +184,7 @@ namespace Meteo_Interface
             this.panelHeader.Location = new System.Drawing.Point(0, 0);
             this.panelHeader.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panelHeader.Name = "panelHeader";
-            this.panelHeader.Size = new System.Drawing.Size(1062, 142);
+            this.panelHeader.Size = new System.Drawing.Size(1555, 142);
             this.panelHeader.TabIndex = 6;
             // 
             // label1
@@ -219,7 +219,7 @@ namespace Meteo_Interface
             this.mainPanel.Location = new System.Drawing.Point(298, 142);
             this.mainPanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.mainPanel.Name = "mainPanel";
-            this.mainPanel.Size = new System.Drawing.Size(764, 323);
+            this.mainPanel.Size = new System.Drawing.Size(1257, 353);
             this.mainPanel.TabIndex = 7;
             // 
             // MainForm
@@ -227,7 +227,7 @@ namespace Meteo_Interface
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1062, 465);
+            this.ClientSize = new System.Drawing.Size(1555, 495);
             this.Controls.Add(this.mainPanel);
             this.Controls.Add(this.panelSide);
             this.Controls.Add(this.panelHeader);

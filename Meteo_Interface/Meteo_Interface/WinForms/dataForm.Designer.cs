@@ -46,6 +46,7 @@ namespace Meteo_Interface.Resources
             this.bApply = new System.Windows.Forms.Button();
             this.lConfig = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudMax)).BeginInit();
@@ -58,7 +59,7 @@ namespace Meteo_Interface.Resources
             this.lData.AutoSize = true;
             this.lData.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lData.ForeColor = System.Drawing.Color.White;
-            this.lData.Location = new System.Drawing.Point(460, -88);
+            this.lData.Location = new System.Drawing.Point(496, -68);
             this.lData.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lData.Name = "lData";
             this.lData.Size = new System.Drawing.Size(171, 61);
@@ -68,11 +69,11 @@ namespace Meteo_Interface.Resources
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(37, 111);
+            this.dataGridView1.Location = new System.Drawing.Point(30, 105);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(708, 390);
+            this.dataGridView1.Size = new System.Drawing.Size(867, 425);
             this.dataGridView1.TabIndex = 4;
             // 
             // groupBox1
@@ -87,9 +88,9 @@ namespace Meteo_Interface.Resources
             this.groupBox1.Controls.Add(this.nudMin);
             this.groupBox1.Controls.Add(this.bApply);
             this.groupBox1.Controls.Add(this.lConfig);
-            this.groupBox1.Location = new System.Drawing.Point(811, 111);
+            this.groupBox1.Location = new System.Drawing.Point(917, 105);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(232, 390);
+            this.groupBox1.Size = new System.Drawing.Size(200, 425);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
@@ -151,6 +152,7 @@ namespace Meteo_Interface.Resources
             this.cmbIds.Name = "cmbIds";
             this.cmbIds.Size = new System.Drawing.Size(121, 28);
             this.cmbIds.TabIndex = 4;
+            this.cmbIds.SelectedIndexChanged += new System.EventHandler(this.cmbIds_SelectedIndexChanged);
             // 
             // nudMax
             // 
@@ -192,12 +194,17 @@ namespace Meteo_Interface.Resources
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick_1);
             // 
+            // timer2
+            // 
+            this.timer2.Interval = 1000;
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
+            // 
             // dataForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.ClientSize = new System.Drawing.Size(1095, 517);
+            this.ClientSize = new System.Drawing.Size(1167, 557);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.lData);
@@ -236,5 +243,6 @@ namespace Meteo_Interface.Resources
         private System.Windows.Forms.Label lMax;
         private System.Windows.Forms.Label lMin;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Timer timer2;
     }
 }

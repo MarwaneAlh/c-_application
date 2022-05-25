@@ -16,6 +16,9 @@ namespace Meteo_Interface.Resources
         {
             InitializeComponent();
             LoadDataGridValues();
+
+            lType.Visible = false;
+            lStatus.Visible = false;
         }
 
         private void LoadDataGridValues()
@@ -36,11 +39,11 @@ namespace Meteo_Interface.Resources
             {
                 dt.Rows.Add(
                     measure.Id.ToString(),
-                    measure.IsConfiguratedStatus ? "Done" : "None",
+                    IsConfigLabel(measure.IsConfiguratedStatus),
                     measure.Type.ToString(),
-                    measure.Data.ToString(),
-                    measure.LastUpdate.ToString(),
-                    measure.AlarmType.ToString()
+                    ConvertedData(measure),
+                    measure.LastUpdate.ToString()+" sec",
+                    ConvertedAlarm(measure)
                 );
                 AddCmbItems(measure);
             }
@@ -51,7 +54,56 @@ namespace Meteo_Interface.Resources
             dataGridView1.Columns[3].HeaderText = "Data";
             dataGridView1.Columns[4].HeaderText = "Last Update";
             dataGridView1.Columns[5].HeaderText = "Alarm";
-            
+        }
+
+        private string ConvertedAlarm(Measure measure)
+        {
+            AlarmType alarmType = AlarmType.Ok;
+            Alarm alarm = measure.Alarm;
+            if(alarm != null)
+            {
+                if(alarm.ConvertedData <= alarm.WarningMin && alarm.ConvertedData >= alarm.CriticalMin)
+                {
+                    alarmType = AlarmType.Low;
+                }
+                else if (alarm.ConvertedData <= alarm.CriticalMin)
+                {
+                    alarmType = AlarmType.Too_Low;
+                }
+
+                else if (alarm.ConvertedData >= alarm.WarningMax && alarm.ConvertedData <= alarm.CriticalMax)
+                {
+                    alarmType = AlarmType.High;
+                }
+                else if (alarm.ConvertedData >= alarm.CriticalMax)
+                {
+                    alarmType = AlarmType.Too_High;
+                }
+            }
+
+            measure.AlarmType = alarmType;
+            return alarmType.ToString();
+        }
+
+        private string ConvertedData(Measure measure)
+        {
+            string value = measure.Data.ToString();
+            if (measure.IsConfiguratedStatus)
+            {
+                value = measure.Alarm.ConvertedData.ToString();
+                switch (measure.Type)
+                {
+                    case DataType.Co2:
+                        value += " ppm";
+                        break;
+                    case DataType.Temperature:
+                        value += " C°";
+                        break;
+
+                        //PAS OUBLIER LES AUTRES
+                }
+            }
+            return value;
         }
 
         private void FillMeasureList()
@@ -73,17 +125,40 @@ namespace Meteo_Interface.Resources
         private void bApply_Click(object sender, EventArgs e)
         {
             //Faire les vérifications
+
             int selectedIndex = (int)cmbIds.SelectedItem - 1;
             int min = (int)nudMin.Value;
             int max = (int)nudMax.Value;
 
-            Console.WriteLine(selectedIndex);
-            Console.WriteLine(min);
-            Console.WriteLine(max);
-            measures[selectedIndex].Alarm = new Alarm(min, max);
+            if(min > max)
+            {
+                MessageBox.Show("Min can not be higher than max");
+            }
+            else
+            {
+                Console.WriteLine(selectedIndex);
+                Console.WriteLine(min);
+                Console.WriteLine(max);
+                measures[selectedIndex].Alarm = new Alarm(min, max);
 
-            MessageBox.Show("Alarm has been added");
-         
+                MessageBox.Show("Alarm has been added");
+            }
+        }
+
+        private void cmbIds_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            lType.Visible = true;
+            lStatus.Visible = true;
+
+            int index = (int)cmbIds.SelectedItem;
+            Measure measure = measures[index - 1];
+            lType.Text += measure.Type;
+            lStatus.Text += IsConfigLabel(measure.IsConfiguratedStatus);
+        }
+
+        private string IsConfigLabel(bool isConfig)
+        {
+            return isConfig ? "Done" : "None";
         }
 
         private void timer1_Tick_1(object sender, EventArgs e)
@@ -91,12 +166,24 @@ namespace Meteo_Interface.Resources
             if (measures.Count >= 8)
             {
                 timer1.Stop();
+                timer2.Enabled = true;
+                timer2.Start();
             }
             else
             {
                 FillMeasureList();
                 LoadDataGridValues();
             }
+        }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            measures.ForEach(measure => measure.LastUpdate++);
+            int indexMeasure = new Random().Next(measures.Count);
+
+            measures[indexMeasure].Data = new Random().Next(65535);
+            measures[indexMeasure].LastUpdate = 0;
+            LoadDataGridValues();
         }
     }
 }

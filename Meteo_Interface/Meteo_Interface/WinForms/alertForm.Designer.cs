@@ -106,9 +106,19 @@ namespace Meteo_Interface.WinForms
             // nudMaxPeriod
             // 
             this.nudMaxPeriod.Location = new System.Drawing.Point(134, 394);
+            this.nudMaxPeriod.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.nudMaxPeriod.Name = "nudMaxPeriod";
             this.nudMaxPeriod.Size = new System.Drawing.Size(201, 26);
             this.nudMaxPeriod.TabIndex = 15;
+            this.nudMaxPeriod.Value = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
             // 
             // nudCriticalMin
             // 
@@ -158,7 +168,7 @@ namespace Meteo_Interface.WinForms
             // 
             this.lType.AutoSize = true;
             this.lType.ForeColor = System.Drawing.SystemColors.Control;
-            this.lType.Location = new System.Drawing.Point(110, 281);
+            this.lType.Location = new System.Drawing.Point(73, 273);
             this.lType.Name = "lType";
             this.lType.Size = new System.Drawing.Size(55, 20);
             this.lType.TabIndex = 9;
@@ -201,6 +211,7 @@ namespace Meteo_Interface.WinForms
             this.cmbIds.Name = "cmbIds";
             this.cmbIds.Size = new System.Drawing.Size(268, 28);
             this.cmbIds.TabIndex = 4;
+            this.cmbIds.SelectedIndexChanged += new System.EventHandler(this.cmbIds_SelectedIndexChanged);
             // 
             // nudWarningMax
             // 
